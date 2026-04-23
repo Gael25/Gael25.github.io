@@ -4,145 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaël Perrot</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Georgia', serif;
-            color: #333;
-            line-height: 1.7;
-            max-width: 780px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            margin-bottom: 40px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
-        }
-        h1 {
-            font-size: 2em;
-            font-weight: normal;
-            margin-bottom: 8px;
-        }
-        nav {
-            margin-top: 15px;
-        }
-        nav a {
-            margin-right: 20px;
-            color: #333;
-            text-decoration: none;
-            font-size: 0.95em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        nav a.active {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        .contact-info {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 5px;
-        }
-        .contact-info a {
-            color: #666;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-bottom: 35px;
-        }
-        h2 {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        p {
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-        .research-item {
-            margin-bottom: 25px;
-        }
-        .research-item h3 {
-            font-size: 1em;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .research-item .authors {
-            font-style: italic;
-            font-size: 0.9em;
-            color: #555;
-            margin-bottom: 5px;
-        }
-        .research-item .status {
-            font-size: 0.85em;
-            color: #888;
-            margin-bottom: 5px;
-        }
-        .research-item .description {
-            font-size: 0.93em;
-        }
-        .cv-link {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 16px;
-            border: 1px solid #333;
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-        .cv-link:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        footer {
-            margin-top: 60px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-            font-size: 0.8em;
-            color: #999;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>Gaël Perrot</h1>
-    <div class="contact-info">
+    <div class="subtitle">
         Research Assistant in Economics | Paris, France<br>
-        <a href="mailto:gael.perrot29@gmail.com">gael.perrot29@gmail.com</a>
+        <a href="mailto:gael.perrot29@gmail.com">gael.perrot29@gmail.com</a> · <a href="https://github.com/Gael25">GitHub</a>
     </div>
     <nav>
         <a href="index.html" class="active">About</a>
         <a href="research.html">Research</a>
+        <a href="experience.html">Experience</a>
         <a href="cv_gael_perrot.pdf">CV [PDF]</a>
     </nav>
 </header>
 
-<section>
-    <h2>About</h2>
-    <p>
-        I hold a Master's degree in Development Economics from Paris 1 Panthéon-Sorbonne University. Since 2024, I have been working as a research assistant on several applied economics projects at the Geneva Graduate Institute, the London Business School, the University of Namur, and Paris 1.
-    </p>
-    <p>
-        My work focuses on building and analyzing datasets from heterogeneous sources, including administrative records, survey data, spatial data, and historical archives, primarily in African and French contexts. I have experience with R, Stata, Python, QGIS, and LaTeX.
-    </p>
-    <p>
-        My research interests include political economy, development economics, and public policy evaluation. I am particularly interested in questions related to state capacity, governance, and the empirical study of institutions.
-    </p>
-</section>
-
-<section>
-    <h2>Current Position</h2>
-    <p>
-        Research Assistant (June 2024 – present), working with researchers at the Geneva Graduate Institute, the London Business School, the University of Namur, and Université Paris 1 Panthéon-Sorbonne.
-    </p>
-</section>
+<div class="about-container">
+    <div class="about-photo">
+        <img src="photo.jpeg" alt="Gaël Perrot">
+    </div>
+    <div class="about-text">
+        <p>
+            I hold a Master's degree in Development Economics from Paris 1 Panthéon-Sorbonne University. Since 2024, I have been working as a research assistant on several applied economics projects at the Geneva Graduate Institute, the London Business School, the University of Namur, and Paris 1.
+        </p>
+        <p>
+            My work focuses on building and analyzing datasets from heterogeneous sources, including administrative records, survey data, spatial data, and historical archives, primarily in African and French contexts.
+        </p>
+        <p>
+            My research interests include political economy, development economics, and public policy evaluation.
+        </p>
+    </div>
+</div>
 
 <section>
     <h2>Education</h2>
@@ -150,6 +45,15 @@
         <strong>M2 Development Economics</strong>, Université Paris 1 Panthéon-Sorbonne, 2023–2024<br>
         <strong>M1 International Trade and Environment</strong>, Université Paris 1 Panthéon-Sorbonne, 2022–2023<br>
         <strong>B.A. Economics and Management</strong>, Université de Bretagne Occidentale, 2019–2022
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <p>
+        <strong>Software</strong> — R, Stata, Python, QGIS, LaTeX, Claude Code<br>
+        <strong>Methods</strong> — OLS, Diff-in-Diff, RDD, IV, Event study, RCT, NLP<br>
+        <strong>Languages</strong> — French (native), English (fluent), Spanish (intermediate)
     </p>
 </section>
 
